@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="agradecimento.html">
+    <title>Portifólio</title>
+</head>
+
+<body>
+
+    <div class="cabecario">
+        <div class="hidden-text">
+            <h3>Olá, que prazer ter você aqui!</h3>
+            <h1>Ana Júlia Bock Medina</h1>
+
+            <ul>
+                <li class="sobre"><a href="#sobre-mim">Sobre mim</a></li>
+                <li class="hard"><a href="#hardskills">Hardskills</a></li>
+                <li class="soft"><a href="#softskills">Softskills</a></li>
+                <li class="con"><a href="#contato">Contato</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <section id="sobre-mim">
+        <div class="hidden-text" id="sobre">
+            <div class="texto">
+                <h1>Sobre mim</h1>
+                <p>Olá, me chamo Ana Júlia Bock Medina, tenho 18 anos e acabei de iniciar minha trajetória no mundo da
+                    tecnologia.
+                    Sempre fui fascinada por lógica, design e tudo o que envolve tecnologia, o que
+                    naturalmente me levou à área de TI.</p>
+
+                <p>Atualmente, estou no 2º semestre do curso Técnico em Informática, onde venho me desenvolvendo tanto
+                    no Front-End, área pela qual sou apaixonada, quanto no Back-End, que gosto
+                    especialmente pela parte lógica e estrutural.
+
+                    Ademais, busco constantemente expandir meus conhecimentos por meio de cursos e bootcamps on-line.
+                </p>
+
+                <p>Estou à procura de um estágio que me permita aplicar meus aprendizados e crescer ainda mais na área.
+                </p>
+
+                <p><strong>Data de nascimento: </strong>15/04/2006</p>
+                <p><strong>E-mail: </strong><a href="mailto:anajuliabm248@gmail.com"
+                        title="Me envie uma mensagem!">anajuliabm248@gmail.com</a></p>
+                <p><strong>Escolaridade: </strong>Ensino médio incompleto</p>
+                <p><strong>Técnico: </strong>Técnico em Informática | ULBRA São Lucas</p>
+            </div>
+
+            <div class="foto">
+                <img src="img/eu.png" alt="Minha foto" width="200px">
+            </div>
+
+        </div>
+    </section>
+
+    <div class="habilidades">
+
+        <section id="hardskills">
+            <div class="hidden-text">
+                <h1>Hardskills</h1>
+
+                <img src="img/css.png" alt="CSS">
+                <img src="img/html.png" alt="HTML">
+                <img src="img/java.png" alt="Java">
+                <img src="img/javascript.png" alt="JavaScript">
+            </div>
+        </section>
+
+        <section id="softskills">
+
+            <div class="hidden-text">
+
+                <h1>Softskills</h1>
+
+                <ul>
+                    <li>Paciência</li>
+                    <li>Resiliência</li>
+                    <li>Proatividade</li>
+                    <li>Curiosidade</li>
+                    <li>Autogestão</li>
+                    <li>Colaboração</li>
+                </ul>
+
+            </div>
+        </section>
+
+    </div>
+
+    <section id="contato">
+        <form id="myform" action="https://formsubmit.co/anajuliabm248@gmail.com" method="POST">
+            <fieldset>
+                <div class="hidden-text">
+
+                    <legend>
+                        <h1>Contato</h1>
+                    </legend>
+
+                    <input type="text" name="name" required class="input-padrao" placeholder="Nome">
+
+                    <input type="email" name="email" required class="input-padrao" placeholder="E-mail">
+
+                    <textarea name="message" placeholder="Envie sua mensagem!" required></textarea>
+
+                    <button type="submit" class="enviar">Enviar</button>
+
+                    <div class="linha-com-texto"><span>OU</span></div>
+
+                    <div class="icones">
+
+                        <div>
+                            <a href="https://www.linkedin.com/in/ana-julia-bock-medina/"
+                                title="Me siga no Linkedin!"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                            <a href="https://www.linkedin.com/in/ana-julia-bock-medina/"
+                                title="Me siga no Linkedin!">Linkedin</a>
+                        </div>
+
+                        <div>
+                            <a href="https://github.com/Anajuliabm248" title="Dê uma olhada em meus projetos!"><img
+                                    src="img/github.png" alt="GitHub"></a>
+                            <a href="https://github.com/Anajuliabm248"
+                                title="Dê uma olhada em meus projetos!">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <script>
+        document.getElementById('myform').onsubmit = function () {
+            setTimeout(function () {
+                window.location.href = "https://anajuliabm248.github.io/Portifolio/agradecimento.html";
+            }, 500); // Redireciona após 0,5 segundo
+            return true; // Permite o envio do formulário
+        };
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
